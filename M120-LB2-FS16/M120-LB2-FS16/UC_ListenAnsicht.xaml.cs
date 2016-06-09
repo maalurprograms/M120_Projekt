@@ -23,9 +23,24 @@ namespace M120_LB2_FS16
         public UC_ListenAnsicht()
         {
             InitializeComponent();
+            setData();
+        }
+
+        private void setData()
+        {
+
             foreach (Einsatz einsatz in Bibliothek.Einsatz_Alle())
             {
-                listen_ansicht.
+                
+            }
+            listen_ansicht.ItemsSource = Bibliothek.Einsatz_Alle();
+        }
+
+        private class Data
+        {
+            public Data(String Mitarbeiter, String Projekt)
+            {
+                
             }
         }
     }
