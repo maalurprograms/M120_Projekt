@@ -4,7 +4,7 @@ using System.Windows.Media;
 
 namespace M120_LB2_FS16
 {
-    class Mitarbeiter
+    public class Mitarbeiter
     {
         public Int32 ID { get; set; }
         public String Name { get; set; }

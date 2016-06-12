@@ -1,0 +1,27 @@
+﻿<Window x:Class="M120_LB2_FS16.EinzelAnsicht"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:M120_LB2_FS16"
+        mc:Ignorable="d"
+        Title="EinzelAnsicht" Height="300" Width="300">
+    <Grid Margin="10">
+        <Label x:Name="label" Content="Einsatz ID:" HorizontalAlignment="Left" VerticalAlignment="Top"/>
+        <Label x:Name="id" Content="1" HorizontalAlignment="Left" Margin="90,0,0,0" VerticalAlignment="Top" RenderTransformOrigin="1.604,0.641"/>
+        <ComboBox x:Name="mitarbeiter" HorizontalAlignment="Left" Margin="90,35,0,0" VerticalAlignment="Top" Width="120" SelectionChanged="mitarbeiter_SelectionChanged"/>
+        <Label x:Name="label1" Content="Mitarbeiter:" HorizontalAlignment="Left" Margin="0,31,0,0" VerticalAlignment="Top"/>
+        <ComboBox x:Name="projekt" HorizontalAlignment="Left" Margin="90,66,0,0" VerticalAlignment="Top" Width="120"/>
+        <Label x:Name="label1_Copy" Content="Projekt:" HorizontalAlignment="Left" Margin="0,62,0,0" VerticalAlignment="Top"/>
+        <Label x:Name="label2" Content="Startzeit:" HorizontalAlignment="Left" Margin="0,123,0,0" VerticalAlignment="Top"/>
+        <Label x:Name="label2_Copy" Content="Endzeit:" HorizontalAlignment="Left" Margin="0,154,0,0" VerticalAlignment="Top"/>
+        <Label x:Name="label3" Content="Farbe:" HorizontalAlignment="Left" Margin="0,185,0,0" VerticalAlignment="Top"/>
+        <TextBox x:Name="farbe" HorizontalAlignment="Left" Height="23" Margin="90,188,0,0" TextWrapping="Wrap" Text="#000000" VerticalAlignment="Top" Width="120"/>
+        <Button x:Name="speichern" Content="Speichern" HorizontalAlignment="Left" Margin="90,219,0,0" VerticalAlignment="Top" Width="75" RenderTransformOrigin="0.142,0.583"/>
+        <Label x:Name="label1_Copy1" Content="Datum" HorizontalAlignment="Left" Margin="0,93,0,0" VerticalAlignment="Top"/>
+        <DatePicker x:Name="datum" HorizontalAlignment="Left" Margin="90,95,0,0" VerticalAlignment="Top" Width="120"/>
+        <TextBox x:Name="end_zeit" HorizontalAlignment="Left" Height="23" Margin="90,157,0,0" TextWrapping="Wrap" Text="TextBox" VerticalAlignment="Top" Width="120"/>
+        <TextBox x:Name="start_zeit" HorizontalAlignment="Left" Height="23" Margin="90,126,0,0" TextWrapping="Wrap" Text="TextBox" VerticalAlignment="Top" Width="120"/>
+
+    </Grid>
+</Window>

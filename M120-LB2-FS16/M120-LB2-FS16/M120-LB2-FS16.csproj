@@ -55,9 +55,16 @@
       <Generator>MSBuild:Compile</Generator>
       <SubType>Designer</SubType>
     </ApplicationDefinition>
+    <Compile Include="EinzelAnsicht.xaml.cs">
+      <DependentUpon>EinzelAnsicht.xaml</DependentUpon>
+    </Compile>
     <Compile Include="UC_ListenAnsicht.xaml.cs">
       <DependentUpon>UC_ListenAnsicht.xaml</DependentUpon>
     </Compile>
+    <Page Include="EinzelAnsicht.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
     <Page Include="MainWindow.xaml">
       <Generator>MSBuild:Compile</Generator>
       <SubType>Designer</SubType>

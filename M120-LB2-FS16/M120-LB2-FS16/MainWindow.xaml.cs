@@ -24,6 +24,12 @@ namespace M120_LB2_FS16
         {
             datenBereitstellen();
             InitializeComponent();
+            UCView.Content = new UC_ListenAnsicht();
+        }
+
+        private void button_Click(object sender, RoutedEventArgs e)
+        {
+            UCView.Content = new UC_ListenAnsicht();
         }
 
         #region Testdaten
@@ -110,15 +116,5 @@ namespace M120_LB2_FS16
             demoDatenEinsaetze();
         }
         #endregion
-
-        private void button_Click(object sender, RoutedEventArgs e)
-        {
-            setContent(new UC_ListenAnsicht());
-        }
-
-        private void setContent(UserControl t)
-        {
-            UCView.Content = t;
-        }
     }
 }

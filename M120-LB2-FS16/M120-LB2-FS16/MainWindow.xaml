@@ -5,7 +5,7 @@
         xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
         xmlns:local="clr-namespace:M120_LB2_FS16"
         mc:Ignorable="d"
-        Title="MainWindow" Height="500" Width="800" ResizeMode="NoResize">
+        Title="MainWindow" ResizeMode="NoResize" Width="500" Height="200">
     <Grid>
         <Button Content="Listen Ansicht" HorizontalAlignment="Left" VerticalAlignment="Top" Click="button_Click" Width="86" Margin="10,10,0,0"/>
         <ScrollViewer x:Name="UCView" HorizontalAlignment="Left" Margin="10,35,0,0" VerticalAlignment="Top"/>

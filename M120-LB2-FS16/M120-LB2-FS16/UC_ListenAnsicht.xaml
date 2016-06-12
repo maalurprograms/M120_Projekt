@@ -6,5 +6,5 @@
              xmlns:local="clr-namespace:M120_LB2_FS16"
              mc:Ignorable="d" 
              d:DesignHeight="300" d:DesignWidth="300">
-    <DataGrid x:Name="listen_ansicht" HorizontalAlignment="Center" VerticalAlignment="Center" Height="300" />
+    <DataGrid x:Name="listen_ansicht" HorizontalAlignment="Center" VerticalAlignment="Center" MouseDoubleClick="listen_ansicht_MouseDoubleClick" IsReadOnly="True" />
 </UserControl>
