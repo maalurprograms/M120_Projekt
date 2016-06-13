@@ -53,3 +53,9 @@ C:\Users\jonas_000\Source\Repos\M120_Projekt\M120-LB2-FS16\M120-LB2-FS16\obj\Deb
 C:\Users\jonas_000\Source\Repos\M120_Projekt\M120-LB2-FS16\M120-LB2-FS16\obj\Debug\EinzelAnsicht.baml
 C:\Users\jonas_000\Source\Repos\M120_Projekt\M120-LB2-FS16\M120-LB2-FS16\obj\Debug\UC_KalenderAnsicht.g.cs
 C:\Users\jonas_000\Source\Repos\M120_Projekt\M120-LB2-FS16\M120-LB2-FS16\obj\Debug\UC_KalenderAnsicht.baml
+C:\Users\Jonas Cosandey\Source\Repos\M120_Projekt\M120-LB2-FS16\M120-LB2-FS16\obj\Debug\EinzelAnsicht.g.cs
+C:\Users\Jonas Cosandey\Source\Repos\M120_Projekt\M120-LB2-FS16\M120-LB2-FS16\obj\Debug\UC_KalenderAnsicht.g.cs
+C:\Users\Jonas Cosandey\Source\Repos\M120_Projekt\M120-LB2-FS16\M120-LB2-FS16\obj\Debug\UC_ListenAnsicht.g.cs
+C:\Users\Jonas Cosandey\Source\Repos\M120_Projekt\M120-LB2-FS16\M120-LB2-FS16\obj\Debug\EinzelAnsicht.baml
+C:\Users\Jonas Cosandey\Source\Repos\M120_Projekt\M120-LB2-FS16\M120-LB2-FS16\obj\Debug\UC_KalenderAnsicht.baml
+C:\Users\Jonas Cosandey\Source\Repos\M120_Projekt\M120-LB2-FS16\M120-LB2-FS16\obj\Debug\UC_ListenAnsicht.baml

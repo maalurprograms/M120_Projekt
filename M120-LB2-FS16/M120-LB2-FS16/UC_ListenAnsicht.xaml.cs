@@ -102,6 +102,7 @@ namespace M120_LB2_FS16
             Data einsatzData = grid.SelectedValue as Data;
             EinzelAnsicht einzelAnsicht = new EinzelAnsicht(einsatzData.ID);
             einzelAnsicht.Show();
+            // TODO Add event handler for refresh and disable mainwindow while einzelansicht offen.
         }
     }
 }
