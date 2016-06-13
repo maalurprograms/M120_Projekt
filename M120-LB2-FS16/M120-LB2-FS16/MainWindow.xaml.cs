@@ -22,8 +22,10 @@ namespace M120_LB2_FS16
     {
         public MainWindow()
         {
-            InitializeComponent();
             datenBereitstellen();
+            InitializeComponent();
+            App.Current.ShutdownMode = ShutdownMode.OnMainWindowClose;
+            UCView.Content = new UC_ListenAnsicht();
         }
 
         #region Testdaten
@@ -72,6 +74,7 @@ namespace M120_LB2_FS16
         private void demoDatenEinsaetze()
         {
             Einsatz e1 = new Einsatz();
+            e1.ID = 1;
             e1.Mitarbeiter = Bibliothek.Mitarbeiter_nach_ID(1);
             e1.Projekt = Bibliothek.Projekt_nach_ID(1);
             e1.Start = new DateTime(2016, 6, 7, 8, 0, 0);
@@ -79,6 +82,7 @@ namespace M120_LB2_FS16
             Bibliothek.EinsatzNeu(e1);
 
             Einsatz e2 = new Einsatz();
+            e2.ID = 2;
             e2.Mitarbeiter = Bibliothek.Mitarbeiter_nach_ID(1);
             e2.Projekt = Bibliothek.Projekt_nach_ID(2);
             e2.Start = new DateTime(2016, 6, 10, 11, 0, 0);
@@ -86,6 +90,7 @@ namespace M120_LB2_FS16
             Bibliothek.EinsatzNeu(e2);
 
             Einsatz e3 = new Einsatz();
+            e3.ID = 3;
             e3.Mitarbeiter = Bibliothek.Mitarbeiter_nach_ID(2);
             e3.Projekt = Bibliothek.Projekt_nach_ID(1);
             e3.Start = new DateTime(2016, 6, 14, 10, 0, 0);
@@ -93,6 +98,7 @@ namespace M120_LB2_FS16
             Bibliothek.EinsatzNeu(e3);
 
             Einsatz e4 = new Einsatz();
+            e4.ID = 4;
             e4.Mitarbeiter = Bibliothek.Mitarbeiter_nach_ID(2);
             e4.Projekt = Bibliothek.Projekt_nach_ID(1);
             e4.Start = new DateTime(2016, 6, 15, 10, 0, 0);
@@ -106,5 +112,31 @@ namespace M120_LB2_FS16
             demoDatenEinsaetze();
         }
         #endregion
+
+        private void einzel_ansicht_neu_Click(object sender, RoutedEventArgs e)
+        {
+            EinzelAnsicht einzelAnsicht = new EinzelAnsicht(0);
+            einzelAnsicht.Show();
+            einzelAnsicht.Closed += new EventHandler((o, args) =>
+            {
+                this.IsEnabled = true;
+                UCView.Content = new UC_ListenAnsicht();
+            });
+            this.IsEnabled = false;
+        }
+
+        private void kalender_ansicht_button_Click(object sender, RoutedEventArgs e)
+        {
+            UCView.Content = new UC_KalenderAnsicht();
+            this.Width = 800;
+            this.Height = 500;
+        }
+
+        private void listen_ansicht_Click(object sender, RoutedEventArgs e)
+        {
+            UCView.Content = new UC_ListenAnsicht();
+            this.Width = 500;
+            this.Height = 300;
+        }
     }
 }

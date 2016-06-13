@@ -4,7 +4,7 @@ using System.Windows.Media;
 
 namespace M120_LB2_FS16
 {
-    class Projekt
+    public class Projekt
     {
         public Int32 ID { get; set; }
         public String Name { get; set; }

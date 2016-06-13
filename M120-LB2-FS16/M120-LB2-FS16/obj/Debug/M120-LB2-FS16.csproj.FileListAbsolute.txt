@@ -36,3 +36,20 @@ C:\Users\Jonas Cosandey\Source\Repos\M120_Projekt\M120-LB2-FS16\M120-LB2-FS16\ob
 C:\Users\Jonas Cosandey\Source\Repos\M120_Projekt\M120-LB2-FS16\M120-LB2-FS16\obj\Debug\M120-LB2-FS16.g.resources
 C:\Users\Jonas Cosandey\Source\Repos\M120_Projekt\M120-LB2-FS16\M120-LB2-FS16\obj\Debug\M120_LB2_FS16.Properties.Resources.resources
 C:\Users\Jonas Cosandey\Source\Repos\M120_Projekt\M120-LB2-FS16\M120-LB2-FS16\obj\Debug\M120-LB2-FS16.csproj.GenerateResource.Cache
+C:\Users\jonas_000\Source\Repos\M120_Projekt\M120-LB2-FS16\M120-LB2-FS16\obj\Debug\M120-LB2-FS16.csprojResolveAssemblyReference.cache
+C:\Users\jonas_000\Source\Repos\M120_Projekt\M120-LB2-FS16\M120-LB2-FS16\obj\Debug\MainWindow.g.cs
+C:\Users\jonas_000\Source\Repos\M120_Projekt\M120-LB2-FS16\M120-LB2-FS16\obj\Debug\UC_ListenAnsicht.g.cs
+C:\Users\jonas_000\Source\Repos\M120_Projekt\M120-LB2-FS16\M120-LB2-FS16\obj\Debug\App.g.cs
+C:\Users\jonas_000\Source\Repos\M120_Projekt\M120-LB2-FS16\M120-LB2-FS16\obj\Debug\M120-LB2-FS16_MarkupCompile.cache
+C:\Users\jonas_000\Source\Repos\M120_Projekt\M120-LB2-FS16\M120-LB2-FS16\obj\Debug\M120-LB2-FS16_MarkupCompile.lref
+C:\Users\jonas_000\Source\Repos\M120_Projekt\M120-LB2-FS16\M120-LB2-FS16\bin\Debug\M120-LB2-FS16.exe
+C:\Users\jonas_000\Source\Repos\M120_Projekt\M120-LB2-FS16\M120-LB2-FS16\bin\Debug\M120-LB2-FS16.pdb
+C:\Users\jonas_000\Source\Repos\M120_Projekt\M120-LB2-FS16\M120-LB2-FS16\obj\Debug\MainWindow.baml
+C:\Users\jonas_000\Source\Repos\M120_Projekt\M120-LB2-FS16\M120-LB2-FS16\obj\Debug\UC_ListenAnsicht.baml
+C:\Users\jonas_000\Source\Repos\M120_Projekt\M120-LB2-FS16\M120-LB2-FS16\obj\Debug\M120-LB2-FS16.g.resources
+C:\Users\jonas_000\Source\Repos\M120_Projekt\M120-LB2-FS16\M120-LB2-FS16\obj\Debug\M120_LB2_FS16.Properties.Resources.resources
+C:\Users\jonas_000\Source\Repos\M120_Projekt\M120-LB2-FS16\M120-LB2-FS16\obj\Debug\M120-LB2-FS16.csproj.GenerateResource.Cache
+C:\Users\jonas_000\Source\Repos\M120_Projekt\M120-LB2-FS16\M120-LB2-FS16\obj\Debug\EinzelAnsicht.g.cs
+C:\Users\jonas_000\Source\Repos\M120_Projekt\M120-LB2-FS16\M120-LB2-FS16\obj\Debug\EinzelAnsicht.baml
+C:\Users\jonas_000\Source\Repos\M120_Projekt\M120-LB2-FS16\M120-LB2-FS16\obj\Debug\UC_KalenderAnsicht.g.cs
+C:\Users\jonas_000\Source\Repos\M120_Projekt\M120-LB2-FS16\M120-LB2-FS16\obj\Debug\UC_KalenderAnsicht.baml

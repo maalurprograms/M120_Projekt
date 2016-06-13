@@ -10,11 +10,11 @@ none
 false
 DEBUG;TRACE
 C:\Users\jonas_000\Source\Repos\M120_Projekt\M120-LB2-FS16\M120-LB2-FS16\App.xaml
-2-730283783
+4-573791215
 
-14-1548102445
+16-191270115
 13738642453
-MainWindow.xaml;UC_ListenAnsicht.xaml;
+EinzelAnsicht.xaml;MainWindow.xaml;UC_KalenderAnsicht.xaml;UC_ListenAnsicht.xaml;
 
 True
 
