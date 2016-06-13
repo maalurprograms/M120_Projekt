@@ -24,11 +24,7 @@ namespace M120_LB2_FS16
         {
             datenBereitstellen();
             InitializeComponent();
-            UCView.Content = new UC_ListenAnsicht();
-        }
-
-        private void button_Click(object sender, RoutedEventArgs e)
-        {
+            App.Current.ShutdownMode = ShutdownMode.OnMainWindowClose;
             UCView.Content = new UC_ListenAnsicht();
         }
 
@@ -116,5 +112,31 @@ namespace M120_LB2_FS16
             demoDatenEinsaetze();
         }
         #endregion
+
+        private void einzel_ansicht_neu_Click(object sender, RoutedEventArgs e)
+        {
+            EinzelAnsicht einzelAnsicht = new EinzelAnsicht(0);
+            einzelAnsicht.Show();
+            einzelAnsicht.Closed += new EventHandler((o, args) =>
+            {
+                this.IsEnabled = true;
+                UCView.Content = new UC_ListenAnsicht();
+            });
+            this.IsEnabled = false;
+        }
+
+        private void kalender_ansicht_button_Click(object sender, RoutedEventArgs e)
+        {
+            UCView.Content = new UC_KalenderAnsicht();
+            this.Width = 800;
+            this.Height = 500;
+        }
+
+        private void listen_ansicht_Click(object sender, RoutedEventArgs e)
+        {
+            UCView.Content = new UC_ListenAnsicht();
+            this.Width = 500;
+            this.Height = 300;
+        }
     }
 }

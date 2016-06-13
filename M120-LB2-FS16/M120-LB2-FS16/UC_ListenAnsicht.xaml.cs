@@ -63,6 +63,7 @@ namespace M120_LB2_FS16
                 EinsatzDatum = einsatzDatum;
             }
 
+            #region Getters
             public int ID
             {
                 get { return EinsatzID; }
@@ -73,7 +74,7 @@ namespace M120_LB2_FS16
                 get { return MitarbeiterName; }
             }
 
-            public string Projekt1
+            public string Projekt
             {
                 get { return ProjektName; }
             }
@@ -92,6 +93,7 @@ namespace M120_LB2_FS16
             {
                 get { return EinsatzDatum; }
             }
+            #endregion
         }
 
         private void listen_ansicht_MouseDoubleClick(object sender, MouseButtonEventArgs e)

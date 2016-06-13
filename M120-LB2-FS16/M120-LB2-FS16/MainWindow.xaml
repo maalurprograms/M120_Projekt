@@ -5,9 +5,11 @@
         xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
         xmlns:local="clr-namespace:M120_LB2_FS16"
         mc:Ignorable="d"
-        Title="MainWindow" ResizeMode="NoResize" Width="500" Height="200">
+        Title="MainWindow" ResizeMode="NoResize" Width="500" Height="300" WindowStartupLocation="CenterScreen">
     <Grid>
-        <Button Content="Listen Ansicht" HorizontalAlignment="Left" VerticalAlignment="Top" Click="button_Click" Width="86" Margin="10,10,0,0"/>
+        <Button x:Name="listen_ansicht_button" Content="Listen Ansicht" HorizontalAlignment="Left" VerticalAlignment="Top" Click="listen_ansicht_Click" Width="86" Margin="10,10,0,0"/>
         <ScrollViewer x:Name="UCView" HorizontalAlignment="Left" Margin="10,35,0,0" VerticalAlignment="Top"/>
+        <Button x:Name="einzel_ansicht_neu" Content="Neu" HorizontalAlignment="Left" Margin="206,10,0,0" VerticalAlignment="Top" Width="75" Click="einzel_ansicht_neu_Click"/>
+        <Button x:Name="kalender_ansicht_button" Content="Kalender Ansicht" HorizontalAlignment="Left" Margin="101,10,0,0" VerticalAlignment="Top" Width="100" Click="kalender_ansicht_button_Click"/>
     </Grid>
 </Window>

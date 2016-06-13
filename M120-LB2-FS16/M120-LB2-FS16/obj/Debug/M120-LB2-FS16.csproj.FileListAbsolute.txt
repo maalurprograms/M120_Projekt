@@ -51,3 +51,5 @@ C:\Users\jonas_000\Source\Repos\M120_Projekt\M120-LB2-FS16\M120-LB2-FS16\obj\Deb
 C:\Users\jonas_000\Source\Repos\M120_Projekt\M120-LB2-FS16\M120-LB2-FS16\obj\Debug\M120-LB2-FS16.csproj.GenerateResource.Cache
 C:\Users\jonas_000\Source\Repos\M120_Projekt\M120-LB2-FS16\M120-LB2-FS16\obj\Debug\EinzelAnsicht.g.cs
 C:\Users\jonas_000\Source\Repos\M120_Projekt\M120-LB2-FS16\M120-LB2-FS16\obj\Debug\EinzelAnsicht.baml
+C:\Users\jonas_000\Source\Repos\M120_Projekt\M120-LB2-FS16\M120-LB2-FS16\obj\Debug\UC_KalenderAnsicht.g.cs
+C:\Users\jonas_000\Source\Repos\M120_Projekt\M120-LB2-FS16\M120-LB2-FS16\obj\Debug\UC_KalenderAnsicht.baml
