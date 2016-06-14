@@ -30,8 +30,8 @@ namespace M120_LB2_FS16
 
         private void setData()
         {
-            List<Einsatz> einsaetze = Bibliothek.Einsatz_Alle();
             List<Data> dataList = new List<Data>();
+            List<Einsatz> einsaetze = Bibliothek.Einsatz_Alle();
             foreach (Einsatz einsatz in einsaetze)
             {
                 int id = einsatz.ID;
@@ -102,7 +102,12 @@ namespace M120_LB2_FS16
             Data einsatzData = grid.SelectedValue as Data;
             EinzelAnsicht einzelAnsicht = new EinzelAnsicht(einsatzData.ID);
             einzelAnsicht.Show();
-            // TODO Add event handler for refresh and disable mainwindow while einzelansicht offen.
+            einzelAnsicht.Closed += new EventHandler((o, args) =>
+            {
+                Window.GetWindow(this).IsEnabled = true;
+                setData();
+            });
+            Window.GetWindow(this).IsEnabled = false;
         }
     }
 }

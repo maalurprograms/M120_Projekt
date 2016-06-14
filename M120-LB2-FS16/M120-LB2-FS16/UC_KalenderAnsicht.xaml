@@ -4,8 +4,7 @@
              xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006" 
              xmlns:d="http://schemas.microsoft.com/expression/blend/2008" 
              xmlns:local="clr-namespace:M120_LB2_FS16"
-             mc:Ignorable="d" 
-             d:DesignHeight="300" d:DesignWidth="300" Width="700" Height="500" Margin="20">
+             mc:Ignorable="d" d:DesignWidth="300" Width="700" Height="1500" Margin="20">
     <Grid x:Name="kalender" Width="700" Height="1500" ShowGridLines="True">
         <Grid.ColumnDefinitions>
             <ColumnDefinition Width="100"/>
@@ -29,5 +28,13 @@
         <Label x:Name="sonntag_datum" Grid.Row="0" Grid.Column="6" Content="Sonntag"/>
         <Label x:Name="label" Content="Label" Grid.Column="1" HorizontalAlignment="Left" Margin="0,-160,0,0" VerticalAlignment="Top"/>
         <Grid x:Name="montag_content" HorizontalAlignment="Left" Height="1473" Grid.Row="1" VerticalAlignment="Top" Width="100" Margin="0,0,0,-32"/>
+        <Grid x:Name="dienstag_content" HorizontalAlignment="Left" Height="1473" Grid.Row="1" VerticalAlignment="Top" Width="100" Margin="0,0,0,-32" Grid.Column="1"/>
+        <Grid x:Name="mittwoch_content" HorizontalAlignment="Left" Height="1473" Grid.Row="1" VerticalAlignment="Top" Width="100" Margin="0,0,0,-32" Grid.Column="2"/>
+        <Grid x:Name="donnerstag_content" HorizontalAlignment="Left" Height="1473" VerticalAlignment="Top" Width="100" Margin="0,0,0,-32" Grid.Column="3" Grid.Row="1"/>
+        <Grid x:Name="freitag_content" HorizontalAlignment="Left" Height="1473" VerticalAlignment="Top" Width="100" Margin="0,0,0,-25" Grid.Column="4" Grid.Row="1">
+            <Grid x:Name="dienstag_content_Copy3" HorizontalAlignment="Left" Height="1473" VerticalAlignment="Top" Width="100" Margin="100,27,-100,-27"/>
+            <Grid x:Name="samstag_content" HorizontalAlignment="Left" Height="1473" VerticalAlignment="Top" Width="100" Margin="100,0,-100,0"/>
+        </Grid>
+        <Grid x:Name="sonntag_content" HorizontalAlignment="Left" Height="1473" VerticalAlignment="Top" Width="100" Margin="0,0,0,-25" Grid.Column="6" Grid.Row="1"/>
     </Grid>
 </UserControl>

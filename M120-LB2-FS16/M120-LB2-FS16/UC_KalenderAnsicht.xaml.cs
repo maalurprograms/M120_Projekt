@@ -1,4 +1,5 @@
 ﻿using System;
+using System.CodeDom;
 using System.Collections.Generic;
 using System.Linq;
 using System.Text;
@@ -21,20 +22,19 @@ namespace M120_LB2_FS16
     public partial class UC_KalenderAnsicht : UserControl
     {
         private DateTime[] Woche = new DateTime[7];
+        private Dictionary<String, Grid> TagZuSpalte = new Dictionary<string, Grid>();
         public UC_KalenderAnsicht()
         {
             InitializeComponent();
             setWoche();
-            foreach (Einsatz e in Bibliothek.Einsatz_Alle())
-            {
-                foreach (DateTime tag in Woche)
-                {
-                    if (e.Start.Date == tag.Date)
-                    {
-                        MessageBox.Show(e.ID.ToString() + " " + e.Start.Date.DayOfWeek);
-                    }
-                }
-            }
+            TagZuSpalte.Add("Monday", montag_content);
+            TagZuSpalte.Add("Tuesday", dienstag_content);
+            TagZuSpalte.Add("Wednesday", mittwoch_content);
+            TagZuSpalte.Add("Thursday", donnerstag_content);
+            TagZuSpalte.Add("Friday", freitag_content);
+            TagZuSpalte.Add("Saturday", samstag_content);
+            TagZuSpalte.Add("Sunday", sonntag_content);
+            generiereKalender();
         }
 
         private void setWoche()
@@ -89,6 +89,44 @@ namespace M120_LB2_FS16
             samstag_datum.Content += "\n" + Woche[5].Date.ToShortDateString();
             Woche[6] = Woche[0].AddDays(6);
             sonntag_datum.Content += "\n" + Woche[6].Date.ToShortDateString();
+        }
+
+        private void generiereKalender()
+        {
+            foreach (Einsatz e in Bibliothek.Einsatz_Alle())
+            {
+                foreach (DateTime tag in Woche)
+                {
+                    if (e.Start.Date == tag.Date)
+                    {
+                        Button feld = new Button();
+                        feld.BorderThickness = new Thickness(0,0,0,0);
+                        feld.Content = e.ID;
+                        feld.Width = 50;
+                        feld.Height = ((e.Ende.Hour * 60) + e.Ende.Minute) - ((e.Start.Hour * 60) + e.Start.Minute);
+                        feld.Background = new SolidColorBrush(Colors.LightBlue);
+                        feld.Margin = new Thickness(0, (e.Start.Hour * 60) + e.Start.Minute, 0, 0);
+                        feld.HorizontalAlignment = HorizontalAlignment.Left;
+                        if (e.Mitarbeiter.ID > 1) feld.Margin = new Thickness(50, (e.Start.Hour * 60) + e.Start.Minute, 0, 0);
+                        feld.Click += (sender, args) =>
+                        {
+                            EinzelAnsicht einzelAnsicht = new EinzelAnsicht(e.ID);
+                            einzelAnsicht.Show();
+                            einzelAnsicht.Closed += new EventHandler((o, args2) =>
+                            {
+                                Window.GetWindow(this).IsEnabled = true;
+                                foreach (KeyValuePair<string, Grid> eintrag in TagZuSpalte)
+                                {
+                                    eintrag.Value.Children.Clear();
+                                }
+                                generiereKalender();
+                            });
+                            Window.GetWindow(this).IsEnabled = false;
+                        };
+                        TagZuSpalte[e.Start.DayOfWeek.ToString()].Children.Add(feld);
+                    }
+                }
+            }
         }
     }
 }

@@ -29,6 +29,7 @@ namespace M120_LB2_FS16
 
         private String Fehler_Falsches_Zeit_Format =
             "Bitte geben Sie die Zeit in diesem Format an: 10:57.\n" +
+            "Die Startzeit darf nicht ^nach der Endzeit liegen oder umgekehrt.\n"+
             "Bitte geben Sie das Datum in diesem Format an: 12.04.16 oder benützen Sie den Kalender zum auswählen.";
 
         private Einsatz einsatz;
@@ -106,7 +107,8 @@ namespace M120_LB2_FS16
                     {
                         if (e.Start.Date == testEinsatz.Start.Date)
                         {       // Das Start oder Enddatum liegt auf dem zu überprüfenden Datum
-                            if ((testEinsatz.Start == e.Start || testEinsatz.Ende == e.Ende) || 
+                            if ((testEinsatz.Ende > testEinsatz.Start) ||
+                                (testEinsatz.Start == e.Start || testEinsatz.Ende == e.Ende) || 
                                 // Das Start und Enddatum liegt zwischen den zu überprüfenden Daten
                                 (testEinsatz.Start > e.Start && testEinsatz.Ende < e.Ende) || 
                                 // Das Startdatum liegt zwischen den zu überprüfenden Daten
@@ -143,6 +145,7 @@ namespace M120_LB2_FS16
 
         private void setzeEinsatz(Einsatz e)
         {
+            e.ID = einsatz.ID;
             e.Mitarbeiter = Bibliothek.Mitarbeiter_nach_ID(this.mitarbeiter.SelectedIndex + 1);
             e.Projekt = Bibliothek.Projekt_nach_ID(this.projekt.SelectedIndex + 1);
             e.Farbe = new Color();
