@@ -18,6 +18,7 @@ namespace M120_LB2_FS16
 {
     /// <summary>
     /// Interaktionslogik für UC_KalenderAnsicht.xaml
+    /// Dies ist die Ansicht in der die Einsätze in einem Kalender dargestellt werden.
     /// </summary>
     public partial class UC_KalenderAnsicht : UserControl
     {
@@ -80,7 +81,8 @@ namespace M120_LB2_FS16
                     {
                         Button feld = new Button();
                         feld.BorderThickness = new Thickness(0,0,0,0);
-                        feld.Content = "ID: "+e.ID.ToString()+"\n"+e.Mitarbeiter.Name+"\n"+e.Projekt.Name;
+                        feld.Content = "ID: "+e.ID.ToString()+"\n";
+                        feld.ToolTip = "Mitarbeiter: "+e.Mitarbeiter.Vorname+" "+e.Mitarbeiter.Name+"\nProjekt: "+e.Projekt.Name;
                         feld.Width = 50;
                         feld.Height = ((e.Ende.Hour * 60) + e.Ende.Minute) - ((e.Start.Hour * 60) + e.Start.Minute);
                         feld.Background = new SolidColorBrush(e.Farbe);
