@@ -58,6 +58,9 @@
     <Compile Include="EinzelAnsicht.xaml.cs">
       <DependentUpon>EinzelAnsicht.xaml</DependentUpon>
     </Compile>
+    <Compile Include="Farben.xaml.cs">
+      <DependentUpon>Farben.xaml</DependentUpon>
+    </Compile>
     <Compile Include="UC_KalenderAnsicht.xaml.cs">
       <DependentUpon>UC_KalenderAnsicht.xaml</DependentUpon>
     </Compile>
@@ -65,6 +68,10 @@
       <DependentUpon>UC_ListenAnsicht.xaml</DependentUpon>
     </Compile>
     <Page Include="EinzelAnsicht.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="Farben.xaml">
       <SubType>Designer</SubType>
       <Generator>MSBuild:Compile</Generator>
     </Page>

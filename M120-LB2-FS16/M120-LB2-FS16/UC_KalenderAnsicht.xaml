@@ -4,9 +4,10 @@
              xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006" 
              xmlns:d="http://schemas.microsoft.com/expression/blend/2008" 
              xmlns:local="clr-namespace:M120_LB2_FS16"
-             mc:Ignorable="d" d:DesignWidth="300" Width="700" Height="1500" Margin="20">
-    <Grid x:Name="kalender" Width="700" Height="1500" ShowGridLines="True">
+             mc:Ignorable="d" d:DesignWidth="300" Width="800" Height="1500" Margin="20">
+    <Grid x:Name="kalender" Width="750" ShowGridLines="True" VerticalAlignment="Top" HorizontalAlignment="Left" Height="1500">
         <Grid.ColumnDefinitions>
+            <ColumnDefinition Width="50"/>
             <ColumnDefinition Width="100"/>
             <ColumnDefinition Width="100"/>
             <ColumnDefinition Width="100"/>
@@ -19,22 +20,125 @@
             <RowDefinition Height="Auto"/>
             <RowDefinition Height="1440"/>
         </Grid.RowDefinitions>
-        <Label x:Name="montag_datum" Grid.Row="0" Grid.Column="0" Content="Montag"/>
-        <Label x:Name="dienstag_datum" Grid.Row="0" Grid.Column="1" Content="Dienstag"/>
-        <Label x:Name="mittwoch_datum" Grid.Row="0" Grid.Column="2" Content="Mittwoch"/>
-        <Label x:Name="donnerstag_datum" Grid.Row="0" Grid.Column="3" Content="Donnerstag"/>
-        <Label x:Name="freitag_datum" Grid.Row="0" Grid.Column="4" Content="Freitag"/>
-        <Label x:Name="samstag_datum" Grid.Row="0" Grid.Column="5" Content="Samstag"/>
-        <Label x:Name="sonntag_datum" Grid.Row="0" Grid.Column="6" Content="Sonntag"/>
-        <Label x:Name="label" Content="Label" Grid.Column="1" HorizontalAlignment="Left" Margin="0,-160,0,0" VerticalAlignment="Top"/>
-        <Grid x:Name="montag_content" HorizontalAlignment="Left" Height="1473" Grid.Row="1" VerticalAlignment="Top" Width="100" Margin="0,0,0,-32"/>
-        <Grid x:Name="dienstag_content" HorizontalAlignment="Left" Height="1473" Grid.Row="1" VerticalAlignment="Top" Width="100" Margin="0,0,0,-32" Grid.Column="1"/>
-        <Grid x:Name="mittwoch_content" HorizontalAlignment="Left" Height="1473" Grid.Row="1" VerticalAlignment="Top" Width="100" Margin="0,0,0,-32" Grid.Column="2"/>
-        <Grid x:Name="donnerstag_content" HorizontalAlignment="Left" Height="1473" VerticalAlignment="Top" Width="100" Margin="0,0,0,-32" Grid.Column="3" Grid.Row="1"/>
-        <Grid x:Name="freitag_content" HorizontalAlignment="Left" Height="1473" VerticalAlignment="Top" Width="100" Margin="0,0,0,-25" Grid.Column="4" Grid.Row="1">
-            <Grid x:Name="dienstag_content_Copy3" HorizontalAlignment="Left" Height="1473" VerticalAlignment="Top" Width="100" Margin="100,27,-100,-27"/>
-            <Grid x:Name="samstag_content" HorizontalAlignment="Left" Height="1473" VerticalAlignment="Top" Width="100" Margin="100,0,-100,0"/>
+        <Label x:Name="montag_datum" Grid.Row="0" Grid.Column="1" Content="Montag"/>
+        <Label x:Name="dienstag_datum" Grid.Row="0" Grid.Column="2" Content="Dienstag"/>
+        <Label x:Name="mittwoch_datum" Grid.Row="0" Grid.Column="3" Content="Mittwoch"/>
+        <Label x:Name="donnerstag_datum" Grid.Row="0" Grid.Column="4" Content="Donnerstag"/>
+        <Label x:Name="freitag_datum" Grid.Row="0" Grid.Column="5" Content="Freitag"/>
+        <Label x:Name="samstag_datum" Grid.Row="0" Grid.Column="6" Content="Samstag"/>
+        <Label x:Name="sonntag_datum" Grid.Row="0" Grid.Column="7" Content="Sonntag"/>
+        <Grid x:Name="montag_content" Height="1440" Width="100"     Margin="0"      Grid.Row="1"    Grid.Column="1">
+            <Grid.RowDefinitions>
+                <RowDefinition Height="*"/>
+            </Grid.RowDefinitions>
+            <Grid.ColumnDefinitions>
+                <ColumnDefinition Width="50"/>
+                <ColumnDefinition Width="50"/>
+            </Grid.ColumnDefinitions>
         </Grid>
-        <Grid x:Name="sonntag_content" HorizontalAlignment="Left" Height="1473" VerticalAlignment="Top" Width="100" Margin="0,0,0,-25" Grid.Column="6" Grid.Row="1"/>
+        <Grid x:Name="dienstag_content" Height="1440" Width="100"   Margin="0"      Grid.Row="1"    Grid.Column="2">
+            <Grid.RowDefinitions>
+                <RowDefinition Height="*"/>
+            </Grid.RowDefinitions>
+            <Grid.ColumnDefinitions>
+                <ColumnDefinition Width="50"/>
+                <ColumnDefinition Width="50"/>
+            </Grid.ColumnDefinitions>
+        </Grid>
+        <Grid x:Name="mittwoch_content" Height="1440" Width="100"   Margin="0"      Grid.Row="1"    Grid.Column="3">
+            <Grid.RowDefinitions>
+                <RowDefinition Height="*"/>
+            </Grid.RowDefinitions>
+            <Grid.ColumnDefinitions>
+                <ColumnDefinition Width="50"/>
+                <ColumnDefinition Width="50"/>
+            </Grid.ColumnDefinitions>
+        </Grid>
+        <Grid x:Name="donnerstag_content" Height="1440" Width="100" Margin="0"      Grid.Row="1"    Grid.Column="4">
+            <Grid.RowDefinitions>
+                <RowDefinition Height="*"/>
+            </Grid.RowDefinitions>
+            <Grid.ColumnDefinitions>
+                <ColumnDefinition Width="50"/>
+                <ColumnDefinition Width="50"/>
+            </Grid.ColumnDefinitions>
+        </Grid>
+        <Grid x:Name="freitag_content" Height="1440" Width="100"    Margin="0"      Grid.Row="1"    Grid.Column="5">
+            <Grid.RowDefinitions>
+                <RowDefinition Height="*"/>
+            </Grid.RowDefinitions>
+            <Grid.ColumnDefinitions>
+                <ColumnDefinition Width="50"/>
+                <ColumnDefinition Width="50"/>
+            </Grid.ColumnDefinitions>
+        </Grid>
+        <Grid x:Name="samstag_content" Height="1440" Width="100"    Margin="0"      Grid.Row="1"    Grid.Column="6">
+            <Grid.RowDefinitions>
+                <RowDefinition Height="*"/>
+            </Grid.RowDefinitions>
+            <Grid.ColumnDefinitions>
+                <ColumnDefinition Width="50"/>
+                <ColumnDefinition Width="50"/>
+            </Grid.ColumnDefinitions>
+        </Grid>
+        <Grid x:Name="sonntag_content" Height="1440" Width="100"    Margin="10,1,-10,0"      Grid.Row="1"    Grid.Column="7">
+            <Grid.RowDefinitions>
+                <RowDefinition Height="*"/>
+            </Grid.RowDefinitions>
+            <Grid.ColumnDefinitions>
+                <ColumnDefinition Width="50"/>
+                <ColumnDefinition Width="50"/>
+            </Grid.ColumnDefinitions>
+        </Grid>
+        <Button x:Name="kalender_links" Content="&lt;" Margin="0,3,0,0" Width="25" HorizontalAlignment="Left" Click="kalender_links_Click"/>
+        <Button x:Name="kalender_rechts" Content="&gt;" HorizontalAlignment="Right" Margin="25,3,0,0" Width="25" Click="kalender_rechts_Click"/>
+        <Label Content="03:30" HorizontalAlignment="Left" Margin="0,211,0,0" Grid.Row="1" Width="50" Height="30" VerticalAlignment="Top" Background="#FFEAFFFA"/>
+        <Label Content="04:00" HorizontalAlignment="Left" Margin="0,241,0,0" Grid.Row="1" Width="50" Height="30" VerticalAlignment="Top" Background="#FFB3F7E8"/>
+        <Label Content="04:30" HorizontalAlignment="Left" Margin="0,271,0,0" Grid.Row="1" Width="50" Height="30" VerticalAlignment="Top" Background="#FFEAFFFA"/>
+        <Label Content="05:00" HorizontalAlignment="Left" Margin="0,301,0,0" Grid.Row="1" Width="50" Height="30" VerticalAlignment="Top" Background="#FFB3F7E8"/>
+        <Label Content="05:30" HorizontalAlignment="Left" Margin="0,331,0,0" Grid.Row="1" Width="50" Height="30" VerticalAlignment="Top" Background="#FFEAFFFA"/>
+        <Label Content="06:00" HorizontalAlignment="Left" Margin="0,361,0,0" Grid.Row="1" Width="50" Height="30" VerticalAlignment="Top" Background="#FFB3F7E8"/>
+        <Label Content="06:30" HorizontalAlignment="Left" Margin="0,391,0,0" Grid.Row="1" Width="50" Height="30" VerticalAlignment="Top" Background="#FFEAFFFA"/>
+        <Label Content="07:00" HorizontalAlignment="Left" Margin="0,421,0,0" Grid.Row="1" Width="50" Height="30" VerticalAlignment="Top" Background="#FFB3F7E8"/>
+        <Label Content="07:30" HorizontalAlignment="Left" Margin="0,451,0,0" Grid.Row="1" Width="50" Height="30" VerticalAlignment="Top" Background="#FFEAFFFA"/>
+        <Label Content="08:00" HorizontalAlignment="Left" Margin="0,481,0,0" Grid.Row="1" Width="50" Height="30" VerticalAlignment="Top" Background="#FFB3F7E8"/>
+        <Label Content="08:30" HorizontalAlignment="Left" Margin="0,511,0,0" Grid.Row="1" Width="50" Height="30" VerticalAlignment="Top" Background="#FFEAFFFA"/>
+        <Label Content="09:00" HorizontalAlignment="Left" Margin="0,541,0,0" Grid.Row="1" Width="50" Height="30" VerticalAlignment="Top" Background="#FFB3F7E8"/>
+        <Label Content="09:30" HorizontalAlignment="Left" Margin="0,571,0,0" Grid.Row="1" Width="50" Height="30" VerticalAlignment="Top" Background="#FFEAFFFA"/>
+        <Label Content="10:00" HorizontalAlignment="Left" Margin="0,601,0,0" Grid.Row="1" Width="50" Height="30" VerticalAlignment="Top" Background="#FFB3F7E8"/>
+        <Label Content="10:30" HorizontalAlignment="Left" Margin="0,631,0,0" Grid.Row="1" Width="50" Height="30" VerticalAlignment="Top" Background="#FFEAFFFA"/>
+        <Label Content="11:00" HorizontalAlignment="Left" Margin="0,661,0,0" Grid.Row="1" Width="50" Height="30" VerticalAlignment="Top" Background="#FFB3F7E8"/>
+        <Label Content="11:30" HorizontalAlignment="Left" Margin="0,691,0,0" Grid.Row="1" Width="50" Height="30" VerticalAlignment="Top" Background="#FFEAFFFA"/>
+        <Label Content="12:00" HorizontalAlignment="Left" Margin="0,721,0,0" Grid.Row="1" Width="50" Height="30" VerticalAlignment="Top" Background="#FFB3F7E8"/>
+        <Label Content="12:30" HorizontalAlignment="Left" Margin="0,751,0,0" Grid.Row="1" Width="50" Height="30" VerticalAlignment="Top" Background="#FFEAFFFA"/>
+        <Label Content="13:00" HorizontalAlignment="Left" Margin="0,781,0,0" Grid.Row="1" Width="50" Height="30" VerticalAlignment="Top" Background="#FFB3F7E8"/>
+        <Label Content="13:30" HorizontalAlignment="Left" Margin="0,811,0,0" Grid.Row="1" Width="50" Height="30" VerticalAlignment="Top" Background="#FFEAFFFA"/>
+        <Label Content="14:00" HorizontalAlignment="Left" Margin="0,841,0,0" Grid.Row="1" Width="50" Height="30" VerticalAlignment="Top" Background="#FFB3F7E8"/>
+        <Label Content="14:30" HorizontalAlignment="Left" Margin="0,871,0,0" Grid.Row="1" Width="50" Height="30" VerticalAlignment="Top" Background="#FFEAFFFA"/>
+        <Label Content="15:00" HorizontalAlignment="Left" Margin="0,901,0,0" Grid.Row="1" Width="50" Height="30" VerticalAlignment="Top" Background="#FFB3F7E8"/>
+        <Label Content="15:30" HorizontalAlignment="Left" Margin="0,931,0,0" Grid.Row="1" Width="50" Height="30" VerticalAlignment="Top" Background="#FFEAFFFA"/>
+        <Label Content="16:00" HorizontalAlignment="Left" Margin="0,961,0,0" Grid.Row="1" Width="50" Height="30" VerticalAlignment="Top" Background="#FFB3F7E8"/>
+        <Label Content="16:30" HorizontalAlignment="Left" Margin="0,991,0,0" Grid.Row="1" Width="50" Height="30" VerticalAlignment="Top" Background="#FFEAFFFA"/>
+        <Label Content="17:00" HorizontalAlignment="Left" Margin="0,1021,0,0" Grid.Row="1" Width="50" Height="30" VerticalAlignment="Top" Background="#FFB3F7E8"/>
+        <Label Content="17:30" HorizontalAlignment="Left" Margin="0,1051,0,0" Grid.Row="1" Width="50" Height="30" VerticalAlignment="Top" Background="#FFEAFFFA"/>
+        <Label Content="18:00" HorizontalAlignment="Left" Margin="0,1081,0,0" Grid.Row="1" Width="50" Height="30" VerticalAlignment="Top" Background="#FFB3F7E8"/>
+        <Label Content="18:30" HorizontalAlignment="Left" Margin="0,1111,0,0" Grid.Row="1" Width="50" Height="30" VerticalAlignment="Top" Background="#FFEAFFFA"/>
+        <Label Content="19:00" HorizontalAlignment="Left" Margin="0,1141,0,0" Grid.Row="1" Width="50" Height="30" VerticalAlignment="Top" Background="#FFB3F7E8"/>
+        <Label Content="19:30" HorizontalAlignment="Left" Margin="0,1171,0,0" Grid.Row="1" Width="50" Height="30" VerticalAlignment="Top" Background="#FFEAFFFA"/>
+        <Label Content="20:00" HorizontalAlignment="Left" Margin="0,1201,0,0" Grid.Row="1" Width="50" Height="30" VerticalAlignment="Top" Background="#FFB3F7E8"/>
+        <Label Content="20:30" HorizontalAlignment="Left" Margin="0,1231,0,0" Grid.Row="1" Width="50" Height="30" VerticalAlignment="Top" Background="#FFEAFFFA"/>
+        <Label Content="21:00" HorizontalAlignment="Left" Margin="0,1261,0,0" Grid.Row="1" Width="50" Height="30" VerticalAlignment="Top" Background="#FFB3F7E8"/>
+        <Label Content="21:30" HorizontalAlignment="Left" Margin="0,1291,0,0" Grid.Row="1" Width="50" Height="30" VerticalAlignment="Top" Background="#FFEAFFFA"/>
+        <Label Content="22:00" HorizontalAlignment="Left" Margin="0,1321,0,0" Grid.Row="1" Width="50" Height="30" VerticalAlignment="Top" Background="#FFB3F7E8"/>
+        <Label Content="22:30" HorizontalAlignment="Left" Margin="0,1351,0,0" Grid.Row="1" Width="50" Height="30" VerticalAlignment="Top" Background="#FFEAFFFA"/>
+        <Label Content="23:00" HorizontalAlignment="Left" Margin="0,1381,0,0" Grid.Row="1" Width="50" Height="30" VerticalAlignment="Top" Background="#FFB3F7E8"/>
+        <Label Content="23:30" HorizontalAlignment="Left" Margin="0,1411,0,0" Grid.Row="1" Width="50" Height="30" VerticalAlignment="Top" Background="#FFEAFFFA"/>
+        <Label Content="02:30" HorizontalAlignment="Left" Margin="0,151,0,0" Grid.Row="1" Width="50" Height="30" VerticalAlignment="Top" Background="#FFEAFFFA"/>
+        <Label Content="03:00" HorizontalAlignment="Left" Margin="0,181,0,0" Grid.Row="1" Width="50" Height="30" VerticalAlignment="Top" Background="#FFB3F7E8"/>
+        <Label Content="01:30" HorizontalAlignment="Left" Margin="0,91,0,0" Grid.Row="1" Width="50" Height="30" VerticalAlignment="Top" Background="#FFEAFFFA"/>
+        <Label Content="02:00" HorizontalAlignment="Left" Margin="0,121,0,0" Grid.Row="1" Width="50" Height="30" VerticalAlignment="Top" Background="#FFB3F7E8"/>
+        <Label Content="01:00" HorizontalAlignment="Left" Margin="0,61,0,0" Grid.Row="1" Width="50" Height="30" VerticalAlignment="Top" Background="#FFB3F7E8"/>
+        <Label Content="00:30" HorizontalAlignment="Left" Margin="0,31,0,0" Grid.Row="1" Width="50" Height="30" VerticalAlignment="Top" Background="#FFEAFFFA"/>
+        <Label Content="00:00" HorizontalAlignment="Left" Margin="0,1,0,0" Grid.Row="1" Width="50" Height="30" VerticalAlignment="Top" Background="#FFB3F7E8"/>
     </Grid>
 </UserControl>

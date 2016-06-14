@@ -1,0 +1,32 @@
+﻿<Window x:Class="M120_LB2_FS16.Farben"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:M120_LB2_FS16"
+        mc:Ignorable="d"
+        Title="Farben" Height="150" Width="150" ResizeMode="NoResize" WindowStartupLocation="CenterScreen">
+    <Grid Cursor="Hand">
+        <Button x:Name="button" Content="" HorizontalAlignment="Left" Margin="10,10,0,0" VerticalAlignment="Top" Width="20" Height="20" Background="#FFFF0101" Click="farbButtonClick"/>
+        <Button x:Name="button_Copy" Content="" HorizontalAlignment="Left" Margin="35,10,0,0" VerticalAlignment="Top" Width="20" Height="20" Background="#FFFF8C01" Click="farbButtonClick"/>
+        <Button x:Name="button_Copy1" Content="" HorizontalAlignment="Left" Margin="60,10,0,0" VerticalAlignment="Top" Width="20" Height="20" Background="#FFFFD101" Click="farbButtonClick"/>
+        <Button x:Name="button_Copy2" Content="" HorizontalAlignment="Left" Margin="85,10,0,0" VerticalAlignment="Top" Width="20" Height="20" Background="#FFFFFF01" Click="farbButtonClick"/>
+        <Button x:Name="button_Copy3" Content="" HorizontalAlignment="Left" Margin="110,10,0,0" VerticalAlignment="Top" Width="20" Height="20" Background="#FFBAFF01" Click="farbButtonClick"/>
+        <Button x:Name="button_Copy4" Content="" HorizontalAlignment="Left" Margin="10,35,0,0" VerticalAlignment="Top" Width="20" Height="20" Background="#FF01FF01" Click="farbButtonClick"/>
+        <Button x:Name="button_Copy5" Content="" HorizontalAlignment="Left" Margin="35,35,0,0" VerticalAlignment="Top" Width="20" Height="20" Background="#FF01FFC5" Click="farbButtonClick"/>
+        <Button x:Name="button_Copy6" Content="" HorizontalAlignment="Left" Margin="60,35,0,0" VerticalAlignment="Top" Width="20" Height="20" Background="#FF01DCFF" Click="farbButtonClick"/>
+        <Button x:Name="button_Copy7" Content="" HorizontalAlignment="Left" Margin="85,35,0,0" VerticalAlignment="Top" Width="20" Height="20" Background="#FF0180FF" Click="farbButtonClick"/>
+        <Button x:Name="button_Copy8" Content="" HorizontalAlignment="Left" Margin="110,35,0,0" VerticalAlignment="Top" Width="20" Height="20" Background="#FF0118FF" Click="farbButtonClick"/>
+        <Button x:Name="button_Copy9" Content="" HorizontalAlignment="Left" Margin="10,60,0,0" VerticalAlignment="Top" Width="20" Height="20" Background="#FF7401FF" Click="farbButtonClick"/>
+        <Button x:Name="button_Copy10" Content="" HorizontalAlignment="Left" Margin="35,60,0,0" VerticalAlignment="Top" Width="20" Height="20" Background="#FFAE01FF" Click="farbButtonClick"/>
+        <Button x:Name="button_Copy11" Content="" HorizontalAlignment="Left" Margin="60,60,0,0" VerticalAlignment="Top" Width="20" Height="20" Background="#FFFF01F3" Click="farbButtonClick"/>
+        <Button x:Name="button_Copy12" Content="" HorizontalAlignment="Left" Margin="85,60,0,0" VerticalAlignment="Top" Width="20" Height="20" Background="#FFAFFFE2" Click="farbButtonClick"/>
+        <Button x:Name="button_Copy13" Content="" HorizontalAlignment="Left" Margin="110,60,0,0" VerticalAlignment="Top" Width="20" Height="20" Background="#FF52057E" Click="farbButtonClick"/>
+        <Button x:Name="button_Copy14" Content="" HorizontalAlignment="Left" Margin="10,85,0,0" VerticalAlignment="Top" Width="20" Height="20" Background="White" Click="farbButtonClick"/>
+        <Button x:Name="button_Copy15" Content="" HorizontalAlignment="Left" Margin="35,85,0,0" VerticalAlignment="Top" Width="20" Height="20" Background="#FFC5C5C5" Click="farbButtonClick"/>
+        <Button x:Name="button_Copy16" Content="" HorizontalAlignment="Left" Margin="60,85,0,0" VerticalAlignment="Top" Width="20" Height="20" Background="#FF878282" Click="farbButtonClick"/>
+        <Button x:Name="button_Copy17" Content="" HorizontalAlignment="Left" Margin="85,85,0,0" VerticalAlignment="Top" Width="20" Height="20" Background="#FF4F4F4F" Click="farbButtonClick"/>
+        <Button x:Name="button_Copy18" Content="" HorizontalAlignment="Left" Margin="110,85,0,0" VerticalAlignment="Top" Width="20" Height="20" Background="Black" Click="farbButtonClick"/>
+
+    </Grid>
+</Window>

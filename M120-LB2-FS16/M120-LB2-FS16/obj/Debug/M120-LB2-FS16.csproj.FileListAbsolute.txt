@@ -59,3 +59,5 @@ C:\Users\Jonas Cosandey\Source\Repos\M120_Projekt\M120-LB2-FS16\M120-LB2-FS16\ob
 C:\Users\Jonas Cosandey\Source\Repos\M120_Projekt\M120-LB2-FS16\M120-LB2-FS16\obj\Debug\EinzelAnsicht.baml
 C:\Users\Jonas Cosandey\Source\Repos\M120_Projekt\M120-LB2-FS16\M120-LB2-FS16\obj\Debug\UC_KalenderAnsicht.baml
 C:\Users\Jonas Cosandey\Source\Repos\M120_Projekt\M120-LB2-FS16\M120-LB2-FS16\obj\Debug\UC_ListenAnsicht.baml
+C:\Users\Jonas Cosandey\Source\Repos\M120_Projekt\M120-LB2-FS16\M120-LB2-FS16\obj\Debug\Farben.g.cs
+C:\Users\Jonas Cosandey\Source\Repos\M120_Projekt\M120-LB2-FS16\M120-LB2-FS16\obj\Debug\Farben.baml
