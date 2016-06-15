@@ -26,9 +26,6 @@ namespace M120_LB2_FS16
             "Dieser Mitarbeiter kann nicht an diesem Einsatz arbeiten," +
             " da er sich zeitlich mit einem anderen Einsatz des Mitarbeiters überschneidet.";
 
-        private String Fehler_Nichts_geandert =
-            "Sie müssen zuerst Änderungen vornhemen bevor Sie speichern können.";
-
         private String Fehler_Falsches_Zeit_Format =
             "Bitte geben Sie die Zeit in diesem Format an: 10:57.\n" +
             "Die Startzeit darf nicht nach der Endzeit liegen oder umgekehrt.\n"+

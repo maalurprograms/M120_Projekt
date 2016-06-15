@@ -81,7 +81,7 @@ namespace M120_LB2_FS16
                     {
                         Button feld = new Button();
                         feld.BorderThickness = new Thickness(0,0,0,0);
-                        feld.Content = "ID: "+e.ID.ToString()+"\n";
+                        feld.Content = "ID: "+e.ID.ToString();
                         feld.ToolTip = "Mitarbeiter: "+e.Mitarbeiter.Vorname+" "+e.Mitarbeiter.Name+"\nProjekt: "+e.Projekt.Name;
                         feld.Width = 50;
                         feld.Height = ((e.Ende.Hour * 60) + e.Ende.Minute) - ((e.Start.Hour * 60) + e.Start.Minute);
